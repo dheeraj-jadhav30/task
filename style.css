@@ -1,9 +1,7 @@
-/* Global */
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     background-color: #f4f6f9;
-    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -11,7 +9,6 @@ a {
     text-decoration: none;
 }
 
-/* Page title */
 .text {
     margin: 15px 0 10px 20px;
     padding: 6px 12px;
@@ -23,72 +20,47 @@ a {
     background-color: #ffffff;
 }
 
-/* Top navbar */
 .navbar1 {
     height: 56px;
     background-color: #DBDBDB;
-    
-    margin-left:48px ;
+    padding-left: 1rem;
 }
-
-
 
 .praj-img {
-    height: 50px;
-    padding-top : 2px ;
-    
+    height: 45px;
 }
-
-
 
 .right-part a {
     color: blue;
     font-size: 14px;
     font-weight: 600;
-    
 }
 
-.right-part #logout{
-    color:orangered ;
+#logout {
+    color: orangered;
 }
 
-
-/* Dashboard icon */
-.dashboard-icon {
-    margin-left: 12px;
-    color: #6c757d;
-}
-
-/* Sidebar */
 .sidebar {
     background-color: #DBDBDB;
-    border-right: 1px solid #DBDBDB;
     font-size: 14px;
-    position: relative;  
-   
-    
+    position: relative;
 }
 
 .sidebar-toggle {
     position: absolute;
-    top:7%;
-    right: -37px;                
-
-    width: 36px;
-    height: 150px;
-    background-color: #f26522;    
-
+    top: 15%;
+    right: -32px;
+    width: 32px;
+    height: 120px;
+    background-color: #f26522;
     border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    cursor: pointer;
-    z-index: 10;
 }
 
-.sidebar li{
-    margin-bottom: 10px;
+.sidebar li {
+    margin-bottom: 8px;
 }
 
 .sidebar .nav-link {
@@ -100,163 +72,95 @@ a {
     background-color: #e5f2f7;
 }
 
-.icon{
-    font-size: 22px;
+.icon {
+    font-size: 20px;
 }
 
-/* Arrow icon */
 .arrow-icon {
     font-size: 18px;
-    color: #6c757d;
 }
 
-
-.heading{
-    width:90% ;
-    height:45px ;
+.heading {
+    width: 100%;
+    height: 45px;
     border-radius: 10px;
-    display:grid ;
+    display: grid;
     place-items: center;
-    margin-top: 10px ;
     background-color: #DBDBDB;
     font-weight: bold;
-    margin-left:2px ;
-    margin-top:80px ;
+    margin: 2rem 0 1rem 0;
 }
 
-
-
-
-.bottom {
-    display: flex ;
-    margin-top:60px ;
-    flex-wrap: wrap;
-    height:500px ;
+.container {
+    max-width: 100%;
 }
 
-.container{
-    width:90% ;
+.left-part,
+.right-part2 {
+    padding: 0 1rem;
 }
 
-.left-part{
-    padding-left:80px ;
-}
-
-.row input{
-    width: 400px;
-}
-
-.row select{
-    width:400px ;
-    
-}
-
-
-.right-part2{
-    padding-left: 80px;
-    padding-top: 10px;
-}
-
-
-
-/* Styling for labels and inputs to match document density */
-.form-label {
-    color: #555;
-    margin-bottom: 2px;
-}
-
-.form-control-sm, .form-select-sm {
-    border-radius: 2px; 
+.form-control-sm,
+.form-select-sm {
+    width: 100%;
     font-size: 0.85rem;
-    width:250px;
     border-radius: 5px;
 }
 
-/* Background color for the card to separate it from the sidebar */
 .card {
     background-color: #ffffff;
     border: 1px solid #dee2e6;
 }
 
-/* Matching the Success Green for the Save button */
-.btn-success {
-    background-color: #28a745; 
-    border: none;
-
-}
-
-.btn-success i{
-    font-weight: 200;
-}
-
-/* Matching the Gray for the Clear button */
+.btn-success,
 .btn-secondary {
-    background-color: #28a745;
     border: none;
 }
-.btn-secondary i{
-    font-weight: 200;
+
+.export-btn {
+    padding: 8px 40px;
 }
 
-
-
-
-.heading{
-    margin-top: 100px;
+.table {
+    border: 1px solid #e5d7db;
 }
 
-
-.export-btn{
-   padding : 10px ;
-   padding-right:60px ;
-}
-
-.table{
-    border:1px solid #e5d7db ;
-    height:50px ;
-}
-
-
-
-.table th {
-    vertical-align: middle;
-    padding:10px ;
-    background-color: #e3e7ec;
-    
-}
-
-
-
-.table td{
+.table th,
+.table td {
     padding: 10px;
-    vertical-align: middle ;
-}
-
-.table th td{
-    padding:6px 8px ;
-    font-size:12px ;
-    height:30px ;
-} 
-
-
-.btn-sm {
-    font-size: 0.75rem;
-}
-
-.badge {
-    font-size: 0.75rem;
+    vertical-align: middle;
+    font-size: 12px;
 }
 
 .search-box input {
-    width: 200px;
+    width: 100%;
 }
 
 .sort-box select {
-    width: 150px;
+    width: auto;
 }
 
+p {
+    margin: 2rem 0;
+    color: gray;
+}
 
-p{
-    margin-top:100px ;
-    color:gray ;
+@media (max-width: 768px) {
+    .sidebar-toggle {
+        display: none;
+    }
+
+    .navbar1 {
+        margin-left: 0;
+    }
+
+    .right-part {
+        flex-wrap: wrap;
+        justify-content: end;
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
 }
