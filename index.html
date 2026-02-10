@@ -26,7 +26,7 @@
         </div>
 
         <!-- Top navbar -->
-        <header class="navbar1 d-flex align-items-center justify-content-between px-4 ms-4 shadow-sm ">
+        <header class="navbar1 d-flex align-items-center justify-content-between px-4 ms-0 ms-md-4 shadow-sm">
             <div class="img">
                 <img class="praj-img" src="https://www.praj.net/wp-content/themes/Praj/assets/images/logo.png"
                     alt="Praj Logo">
@@ -42,7 +42,7 @@
         </header>
 
         <!-- Main layout -->
-        <div class="container-fluid ms-4">
+        <div class="container-fluid ms-0 ms-md-4">
             <div class="row">
 
 
@@ -65,7 +65,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center flex-nowrap text-dark gap-1" href="#">
-                                 <i class="ri-box-3-line icon"></i>
+                                <i class="ri-box-3-line icon"></i>
                                 <span class="text-truncate">Supplier Non-Manufacture</span>
                                 <i class="ri-arrow-drop-right-line ms-auto arrow-icon"></i>
                             </a>
@@ -205,7 +205,7 @@
                             <h5>SUPPLIER LIST</h5>
                         </div>
 
-                        <div class="d-flex p-3 mt-4 col-10">
+                        <div class="d-flex p-3 mt-4 col-12 col-md-10">
                             <button
                                 class="btn btn-secondary btn-md ms-auto export-btn d-flex align-items-center justify-content-between gap-2">
                                 <i class="ri-save-line"></i>
@@ -253,64 +253,70 @@
                             </div>
 
                             <!-- Table -->
-                            <div class="  shadow-sm borde ">
-                                <table class="table table-hover table-sm mb-0 table-bordered">
-                                    <thead class="table-light ">
-                                        <tr>
-                                            <th></th>
-                                            <th>SR.NO.</th>
-                                            <th>VENDOR CODE</th>
-                                            <th>VENDOR NAME</th>
-                                            <th>CATEGORY</th>
-                                            <th>STATUS</th>
-                                            <th>SUPPLIER STATUS</th>
-                                            <th>STAGE</th>
-                                            <th>SUPPLIER SUBMIT DATE</th>
-                                            <th>PRAJ APPROVED DATE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><button class="btn btn-sm btn-danger">View</button> </td>
-                                            <td>1</td>
-                                            <td>1000282</td>
-                                            <td>JINDAL SAW LTF</td>
-                                            <td>DLMT-1</td>
-                                            <td>Active</td>
-                                            <td><span class="badge bg-success">Approved</span></td>
-                                            <td><span class="badge bg-warning text-dark">Reevaluation initiated</span>
-                                            </td>
-                                            <td>Mayekar Smital</td>
-                                            <td>14-07-2025</td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-sm btn-danger">View</button> </td>
-                                            <td> 2</td>
-                                            <td>1001481</td>
-                                            <td>TOSHIN ANALYTICAL PVT</td>
-                                            <td>DLMT-3</td>
-                                            <td>Active</td>
-                                            <td><span class="badge bg-warning text-dark">Pending</span></td>
-                                            <td><span class="badge bg-warning text-dark">Reevaluation initiated</span>
-                                            </td>
-                                            <td>Shingh Dilip Kumar</td>
-                                            <td>20-05-2025</td>
-                                        </tr>
-                                        <tr>
-                                            <td><button class="btn btn-sm btn-danger">View</button> </td>
-                                            <td>3</td>
-                                            <td>1003117</td>
-                                            <td>OMEGA PVT LTD</td>
-                                            <td>DLMT-3</td>
-                                            <td>Active</td>
-                                            <td><span class="badge bg-warning text-dark">Pending</span></td>
-                                            <td><span class="badge bg-warning text-dark">Reevaluation initiated</span>
-                                            </td>
-                                            <td>Shingh Dilip Kumar</td>
-                                            <td>23-04-2025</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="shadow-sm border table-responsive">
+                                <div class="border rounded col-12 col-md-11">
+
+                                    <table class="table table-hover table-sm mb-0 table-bordered">
+                                        <thead class="table-light ">
+                                            <tr>
+                                                <th></th>
+                                                <th>SR.NO.</th>
+                                                <th>VENDOR CODE</th>
+                                                <th>VENDOR NAME</th>
+                                                <th>CATEGORY</th>
+                                                <th>STATUS</th>
+                                                <th>SUPPLIER STATUS</th>
+                                                <th>STAGE</th>
+                                                <th>SUPPLIER SUBMIT DATE</th>
+                                                <th>PRAJ APPROVED DATE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><button class="btn btn-sm btn-danger">View</button> </td>
+                                                <td>1</td>
+                                                <td>1000282</td>
+                                                <td>JINDAL SAW LTF</td>
+                                                <td>DLMT-1</td>
+                                                <td>Active</td>
+                                                <td><span class="badge bg-success">Approved</span></td>
+                                                <td><span class="badge bg-warning text-dark">Reevaluation
+                                                        initiated</span>
+                                                </td>
+                                                <td>Mayekar Smital</td>
+                                                <td>14-07-2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td><button class="btn btn-sm btn-danger">View</button> </td>
+                                                <td> 2</td>
+                                                <td>1001481</td>
+                                                <td>TOSHIN ANALYTICAL PVT</td>
+                                                <td>DLMT-3</td>
+                                                <td>Active</td>
+                                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                <td><span class="badge bg-warning text-dark">Reevaluation
+                                                        initiated</span>
+                                                </td>
+                                                <td>Shingh Dilip Kumar</td>
+                                                <td>20-05-2025</td>
+                                            </tr>
+                                            <tr>
+                                                <td><button class="btn btn-sm btn-danger">View</button> </td>
+                                                <td>3</td>
+                                                <td>1003117</td>
+                                                <td>OMEGA PVT LTD</td>
+                                                <td>DLMT-3</td>
+                                                <td>Active</td>
+                                                <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                                <td><span class="badge bg-warning text-dark">Reevaluation
+                                                        initiated</span>
+                                                </td>
+                                                <td>Shingh Dilip Kumar</td>
+                                                <td>23-04-2025</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
 
                             <p>Showing data 4 to 8 of 256K entries</p>
@@ -322,7 +328,7 @@
 
                 </main>
 
-                
+
 
 
 
@@ -332,6 +338,8 @@
 
 
     </div>
+
+
 
 </body>
 
