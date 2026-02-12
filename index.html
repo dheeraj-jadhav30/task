@@ -116,10 +116,10 @@
                 <main class="col-12 col-md-9 col-lg-10 content-area">
 
                     <div class="heading main text-secondary ms-4 mt-4">
-                        <h5>NEW SUPPLIER REGISTRATION</h5>
+                        <h5 class="fw-bold text-dark">NEW SUPPLIER REGISTRATION</h5>
                     </div>
 
-                    <div class="container mt-5 ms-4  ">
+                    <div class="container-fluid mt-5 ms-4 container ">
 
                         <div class="card shadow-sm ">
                             <div class="card-body p-4 ">
@@ -176,21 +176,22 @@
 
 
                                     </div>
-                                    <div class="d-flex justify-content-center align-items-center gap-4">
+                                    <div class="d-flex justify-content-center align-items-center gap-4 mt-5">
 
                                         <button
-                                            class="btn btn-success btn-md px-4  d-flex justify-content-between align-items-center gap-2">
-                                            <i class="ri-save-line"></i>
+                                            class="action-btn save-btn d-flex align-items-center justify-content-center gap-2">
+                                            <i class="ri-file-excel-2-line"></i>
                                             Save
                                         </button>
 
                                         <button
-                                            class="btn btn-secondary btn-md px-4  d-flex justify-content-between align-items-center gap-2">
+                                            class="action-btn clear-btn d-flex align-items-center justify-content-center gap-2">
                                             <i class="ri-delete-back-2-line"></i>
                                             Clear
                                         </button>
 
                                     </div>
+
 
                                 </div>
 
@@ -200,29 +201,29 @@
                     </div>
 
 
-                    <div class=" my-5  ">
-                        <div class="heading text-secondary ms-4 ">
-                            <h5>SUPPLIER LIST</h5>
+                    <div class=" my-4 mx-2 rounded col-lg-10 bg-white  list-container">
+                        <div class="heading2 text-secondary  ">
+                            <h5 class="fw-bold text-dark">SUPPLIER LIST</h5>
                         </div>
 
-                        <div class="d-flex p-3 mt-4 col-12 col-md-10">
+                        <div class="d-flex p-3 mt-4 col-12 col-md-11 ">
                             <button
-                                class="btn btn-secondary btn-md ms-auto export-btn d-flex align-items-center justify-content-between gap-2">
-                                <i class="ri-save-line"></i>
-                                Export
+                                class="btn btn-secondary btn-md  export-btn d-flex align-items-center justify-content- center gap-2  px-5 py-3 ms-auto">
+                                <i class="ri-file-excel-2-line"></i>
+                                <span>Export</span>
                             </button>
                         </div>
 
 
                     </div>
 
-                    <div class="border rounded col-11">
+                    <div class="border rounded col-12 bg-white table-box">
 
 
                         <div class="container mt-5 ">
 
                             <!-- Header: Search and Sort -->
-                            <div class="d-flex justify-content-between align-items-center mb-3 gap-3">
+                            <div class="d-flex justify-content-between align-items-center mb-3 gap-3 ">
                                 <div class="search-box ms-auto">
                                     <div class="input-group input-group-sm">
 
@@ -238,12 +239,13 @@
                                 <div class="sort-box d-flex align-items-center gap-2">
 
                                     <div class=" rounded px-2 py-1 d-flex align-items-center gap-2">
-                                        <label class="form-label mb-0 ">
-                                            Sort by:
-                                        </label>
+                                    
 
-                                        <select class="form-select form-select-sm w-auto">
-                                            <option selected>Newest</option>
+                                        <select class="form-select form-select-sm w-auto ">
+                                            <option selected> 
+                                                sort by: 
+                                                <span>Newest</span>
+                                                </option>
                                             <option>Oldest</option>
                                         </select>
                                     </div>
@@ -253,10 +255,9 @@
                             </div>
 
                             <!-- Table -->
-                            <div class="shadow-sm border table-responsive">
-                                <div class="border rounded col-12 col-md-11">
-
-                                    <table class="table table-hover table-sm mb-0 table-bordered">
+                            <div class="  table-responsive ">
+                                <div class=" rounded col-12 col-md-11 custom-table">
+                                    <table class="table table-hover table-sm mb-0 table-bordered ">
                                         <thead class="table-light ">
                                             <tr>
                                                 <th></th>
