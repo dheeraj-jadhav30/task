@@ -103,7 +103,7 @@ a {
    display: flex;
    justify-content: center;
    align-items: center;
-    margin-top: 10px;
+    
     background-color: #DBDBDB;
     font-weight: bold;
     margin-left: 2px;
@@ -111,12 +111,7 @@ a {
     
 }
 
-.bottom {
-    display: flex;
-    margin-top: 60px;
-    flex-wrap: wrap;
-    min-height: 500px;
-}
+
 
 .container {
     width: 90%;
@@ -232,6 +227,7 @@ a {
 
 .table-box{
     width:95% ;
+    border-radius: 30px;
 }
 
 
@@ -252,11 +248,7 @@ a {
     vertical-align: middle;
 }
 
-.table th td {
-    padding: 6px 8px;
-    font-size: 12px;
-    height: 30px;
-}
+ 
 
 .btn-sm {
     font-size: 0.75rem;
@@ -279,6 +271,7 @@ p {
     margin-top: 100px;
     color: gray;
 }
+
 
 @media (max-width: 768px) {
     .left-part,
